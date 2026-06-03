@@ -1,0 +1,208 @@
+/* =========================
+   IMPORT FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+/* =========================
+   GLOBAL
+========================= */
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Background utama */
+.stApp {
+    background: #0f1117;
+    color: #eef0f5;
+}
+
+/* =========================
+   HEADER
+========================= */
+h1 {
+    font-family: 'Sora', sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Sora', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+p,
+span,
+label,
+div {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Caption */
+.stCaption {
+    color: #8b92a5 !important;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+section[data-testid="stSidebar"] {
+    background: #131722;
+    border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+section[data-testid="stSidebar"] * {
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.stButton button {
+    background: #1d2333;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.stButton button:hover {
+    border-color: #4f8ef7;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79,142,247,0.25);
+}
+
+/* =========================
+   CHAT MESSAGE
+========================= */
+.stChatMessage {
+    border-radius: 18px;
+    padding: 10px;
+}
+
+.stChatMessage p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* User */
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {
+    background: rgba(79,142,247,0.08);
+    border: 1px solid rgba(79,142,247,0.15);
+}
+
+/* Assistant */
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* =========================
+   INPUT CHAT
+========================= */
+.stChatInput {
+    font-family: 'Inter', sans-serif;
+}
+
+.stChatInput input {
+    background: #1a1f2d !important;
+    color: white !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    padding: 12px !important;
+}
+
+.stChatInput input:focus {
+    border-color: #4f8ef7 !important;
+    box-shadow: 0 0 0 1px #4f8ef7 !important;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2a3145;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f8ef7;
+}
+
+/* =========================
+   METRIC CARD
+========================= */
+.metric-number {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+.empty-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+}
+
+.empty-subtitle {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+}
+
+/* =========================
+   SPINNER
+========================= */
+.stSpinner {
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   LINK
+========================= */
+a {
+    color: #4f8ef7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+[data-testid="stChatMessage"] {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+[data-testid="stIconMaterial"] {
+    font-family: "Material Symbols Rounded" !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+}
