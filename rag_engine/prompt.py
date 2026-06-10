@@ -21,6 +21,7 @@ PERTANYAAN:
 {question}
 
 JAWABAN:
+Jawaban harus singkat, langsung ke inti, maksimal 2 kalimat.
 """
 
 PROMPT = PromptTemplate(
