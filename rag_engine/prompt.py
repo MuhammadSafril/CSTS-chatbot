@@ -21,6 +21,7 @@ PERTANYAAN:
 {question}
 
 JAWABAN:
+Jelaskan rekomendasi secara lengkap dengan spesifikasi, harga, toko, serta alasan pemilihan laptop. Berikan analisis singkat yang menyesuaikan budget dan kebutuhan pengguna.
 """
 
 PROMPT = PromptTemplate(
