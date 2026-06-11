@@ -117,7 +117,7 @@ if not st.session_state.messages:
                 <p style="color:#4A5068;font-size:0.68rem;text-transform:uppercase;
                     letter-spacing:0.08em;margin-bottom:8px">Contoh pertanyaan</p>
                 <p style="color:#8B92A5;font-size:0.84rem;margin-bottom:6px">
-                    💬 <em>"Saya mahasiswa Teknik, budget 8 juta, butuh laptop kuat"</em></p>
+                    💬 <em>"Saya mahasiswa baru, budget 8 juta, butuh laptop kuat"</em></p>
                 <p style="color:#8B92A5;font-size:0.84rem;margin-bottom:6px">
                     💬 <em>"Laptop terbaik untuk desain grafis di bawah 12 juta"</em></p>
                 <p style="color:#8B92A5;font-size:0.84rem;margin:0">
@@ -134,7 +134,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # ── Chat Input ───────────────────────────────────────────────
-prompt = st.chat_input("Ceritakan kebutuhan laptopmu, misal: mahasiswa Informatika budget 8 juta...")
+prompt = st.chat_input("Ceritakan kebutuhan laptopmu, misal: untuk desaign grafis budget 8 juta...")
 
 if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
