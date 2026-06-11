@@ -21,7 +21,8 @@ PERTANYAAN:
 {question}
 
 JAWABAN:
-
+JAWABAN:
+Berikan jawaban yang informatif namun tidak bertele-tele. Sertakan nama laptop, spesifikasi utama, harga, toko, dan alasan rekomendasi.
 """
 
 PROMPT = PromptTemplate(
